@@ -1,0 +1,20 @@
+{
+  "name": "aptos_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "open-db": "npx prisma studio",
+    "idx": "node ./index.js --action=ensure_account --account_num=3000 --initial_balance=5000"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.1",
+    "aptos": "^1.2.2",
+    "minimist": "^1.2.6",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prisma": "^4.1.1"
+  }
+}
